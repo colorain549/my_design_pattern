@@ -25,12 +25,9 @@ public:
         if (_pInstance)
         {
             // goto step 4
-            if (_pInstance)
-            {
-                _pInstance = new Point(3, 4);
-            }
-            return _pInstance;
+            _pInstance = new Point(3, 4);
         }
+        return _pInstance;
     }
 
     void display()
