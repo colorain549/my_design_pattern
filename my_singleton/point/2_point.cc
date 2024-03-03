@@ -22,7 +22,7 @@ public:
     // step 3: *getInstance
     static Point *getInstance()
     {
-        if (_pInstance)
+        if (_pInstance == nullptr)
         {
             // goto step 4
             _pInstance = new Point(3, 4);
